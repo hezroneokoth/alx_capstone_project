@@ -10,7 +10,9 @@ The objective of the capstone project is to create a web development portfolio t
 
 <!--- Provide a brief description of the project, its purpose, and goals. Explain what problem the project aims to solve or what value it brings to users. --->
 
-    This is a capstone project that create a web development portfolio that demonstrates my skills, projects, and accomplishments. This portfolio servez as a showcase of my abilities and will be a valuable asset in my web development journey. Completing the capstone project reflects my progress, expertise, and readiness to take on more challenging web development projects
+    This is a capstone project that create a web development portfolio that demonstrates my skills, projects, and accomplishments. This portfolio servez as a showcase of my abilities and will be a valuable asset in my web development journey.
+    
+    Completing the capstone project reflects my progress, expertise, and readiness to take on more challenging web development projects
 
 ‘Chapa Kazi’ is a Kiswahili phrase which loosely translates to ‘do the work’
 
@@ -78,6 +80,14 @@ HTML, CSS, Python, Flask, MySQL, JavaScript, API, Git, Visual Studio, Figma
 
 <!--- Include screenshots or a link to a live demo if available. Visual representations can help readers understand the project’s appearance and functionality. --->
 
+![Alt text](<ChapaKazi Flowchart.jpg>)
+
+    A flowchart of the project
+
+![Alt text](<ChapaKazi UI.png>)
+
+    A UI of the project
+
 ## Roadmap and Future Enhancements
 
 <!--- Share any future plans or potential improvements for the project. This could include additional features, performance optimizations, or scalability considerations. --->
@@ -111,18 +121,6 @@ Project Link: https://github.com/hezroneokoth/alx_capstone_project
 Distributed under MIT license. See LICENSE.txt for more information.
 
 In regards with copyright, all lie with the author.
-
-## Contributing
-
-Contributions make the open-source community such an amazing place to learn, create and more. Any contributions you make are appreciated.
-
-If you have a suggestion that would make this project better, please fork the repo and create a pull request. Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (git checkout -b feature/GreatCode)
-3. Commit your Changes (git commit -m 'Adding a GreatCode')
-4. Push to the Branch (git push origin feature/GreatCode)
-5. Open a Pull Request
 
 ## Acknowledgments
 
