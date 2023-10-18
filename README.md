@@ -128,10 +128,12 @@ In regards with copyright, all lie with the author.
 
 This is a list of resources and tools that I have used during the course of this project;
 
-1. Figma
+1. ALX Concept Page
 
-2. YouTube
+2. Figma
 
-3. VisualStudio
+3. YouTube
 
-4. Icons8
+4. VisualStudio
+
+5. Icons8
