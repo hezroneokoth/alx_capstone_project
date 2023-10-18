@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <!-- The main page for the ChapaKazi Task Manager App -->
+    <title>ChapaKazi Capstone Project</title>
+    <script src=""></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <!-- The logo also includes a text-->
+            <a href="#"><img src="Images/icons8-gears-50.png" alt="logo"></a>
+            <span class="logo-text">ChapaKazi</span>
+        </div>
+        <div class="menu">
+            <!-- The menu-->
+            <nav class="navbar-menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#notification"><img src="Images/icons8-notifications-78.png" alt="notification bell"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#search"><img src="Images/icons8-search-24.png" alt="search icon"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#settings"><img src="Images/icons8-settings-50.png" alt="settings icon"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <article>
+            <!-- Welcome section-->
+            <div class="welcome">
+                <h2>Hi Hayden!</h2>
+                <p>Have a nice day!</p>
+            </div>
+        </article>
+
+        <button type="button" onclick="window.location.href='/all-tasks'">All tasks</button>
+
+        <article class="create task">
+            <div class="create">
+                <!-- Allows the user to create a new task-->
+                <img src="Images/icons8-plus-50.png" alt="plus sign icon">
+            </div>
+            <p>Create new task</p>
+        </article>
+
+        <section class="profile">
+            <div class="avatar">
+                <!-- This is the user account-->
+                <img src="Images/henry hughes avatar.png" alt="User avatar">
+            </div>
+            <div class="user">
+                <p>Hayden Okoth</p>
+                <p>hokoth@yahoo.com</p>
+            </div>
+        </section>
+
+        <section class="today-container">
+            <!-- Shows the day's tasks -->
+            <h2 class="today-heading">Today</h2>
+            <div class="today">
+                <div class="today-tab">
+                    <div class="task-info">
+                        <h3 class="today-heading1">Water the plants</h3>
+                    </div>
+                    <p><img src="Images/icons8-clock-50.png" alt="A reminder icon">Reminder</p>
+                    <p><img src="Images/icons8-priority-50 (2).png" alt="An orange danger icon">Medium</p>
+                    <img src="Images/icons8-edit-50.png" alt="An edit icon">
+                    <img src="Images/icons8-delete-24.png" alt="A delete icon">
+                </div>
+            </div>
+            <div class="today-tab">
+                <h3 class="today-heading2">Lina's Graduation</h3>
+                <p><img src="Images/icons8-clock-50.png" alt="A reminder icon">Reminder</p>
+                <p><img src="Images/icons8-priority-50 (1).png" alt="A red danger icon">High</p>
+                <img src="Images/icons8-edit-50.png" alt="An edit icon">
+                <img src="Images/icons8-delete-24.png" alt="A delete icon">
+            </div>
+            </div>
+        </section>
+
+        <section class="progress-container">
+            <!-- Shows the progress of tasks -->
+            <h2 class="progress-heading">Task Progress</h2>
+            <div class="progress">
+                <div class="progress-tab">
+                    <h3>Security Compliance Policy</h3>
+                    <div>
+                        <img src="Images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+                    <div>
+                        <img src="Images/icons8-priority-50 (1).png" alt="A red danger icon">
+                        <p>High</p>
+                    </div>
+                    <img src="Images/icons8-edit-50.png" alt="An edit icon">
+                    <img src="Images/icons8-delete-24.png" alt="A delete icon">
+                </div>
+                <div>
+                    <h3 class="progress-tab">Timiza Accounting App</h3>
+                    <div>
+                        <img src="Images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+                    <div>
+                        <img src="Images/icons8-priority-50.png" alt="A black danger icon">
+                        <p>Low</p>
+                    </div>
+                    <img src="Images/icons8-edit-50.png" alt="An edit icon">
+                    <img src="Images/icons8-delete-24.png" alt="A delete icon">
+                </div>
+            </div>
+        </section>
+
+        <section class="category-container">
+            <h2 class="category-heading">Categories</h2>
+            <!-- This section displays the categories of tasks
+                including the number of tasks in each-->
+            <div class="category">
+                <div class="category-1">
+                    <div class="priority-icon">
+                        <img src="Images/icons8-priority-50 (1).png" alt="A red danger icon">
+                    </div>
+                    <div>
+                        <div class="content-container1">
+                            <p class="priority-1">High</p>
+                            <p>4 tasks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-2">
+                    <div class="priority-icon">
+                        <img src="Images/icons8-priority-50 (2).png" alt="An orange danger icon">
+                    </div>
+                    <div>
+                        <div class="content-container2">
+                            <p class="priority-2">Medium</p>
+                            <p>1 task</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-3">
+                    <div class="priority-icon">
+                        <img src="Images/icons8-priority-50.png" alt="A black danger icon">
+                    </div>
+                    <div>
+                        <div class="content-container3">
+                            <p class="priority-3">Low</p>
+                            <p>7 tasks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
