@@ -46,78 +46,93 @@
             </div>
         </article>
 
-        <button type="button" onclick="window.location.href='/all-tasks'">All tasks</button>
+        <button type="button" onclick="window.location.href='/all-tasks'" class="task-button">All tasks</button>
 
         <article class="create task">
-            <div class="create">
+            <div> class="create">
                 <!-- Allows the user to create a new task-->
                 <img src="Images/icons8-plus-50.png" alt="plus sign icon">
+                <p>Create new task</p>
             </div>
-            <p>Create new task</p>
         </article>
 
         <section class="profile">
             <div class="avatar">
                 <!-- This is the user account-->
                 <img src="Images/henry hughes avatar.png" alt="User avatar">
-            </div>
-            <div class="user">
-                <p>Hayden Okoth</p>
-                <p>hokoth@yahoo.com</p>
-            </div>
+                <div class="user">
+                    <p>Hayden Okoth</p>
+                    <p>hokoth@yahoo.com</p>
+                </div>
         </section>
 
-        <section class="today-container">
-            <!-- Shows the day's tasks -->
-            <h2 class="today-heading">Today</h2>
-            <div class="today">
-                <div class="today-tab">
-                    <div class="task-info">
-                        <h3 class="today-heading1">Water the plants</h3>
-                    </div>
-                    <p><img src="Images/icons8-clock-50.png" alt="A reminder icon">Reminder</p>
-                    <p><img src="Images/icons8-priority-50 (2).png" alt="An orange danger icon">Medium</p>
+        <section class="task-container">
+            <!-- Shows the a few tasks on the dashboard-->
+            <h2 class="task-heading">Tasks</h2>
+
+            <div class="task-tab">
+                <h3 class="today-heading1">Water the plants</h3>
+                <p>Due: Fri 20/10/20223</p>
+                <div class="reminder">
+                    <img src="Images/icons8-clock-50.png" alt="A reminder icon">
+                    <p>Reminder</p>
+                </div>
+                <div class="priority">
+                    <img src="Images/icons8-priority-50 (2).png" alt="An orange danger icon">
+                    <p>Medium</p>
+                </div>
+                <div class="edit-delete">
                     <img src="Images/icons8-edit-50.png" alt="An edit icon">
                     <img src="Images/icons8-delete-24.png" alt="A delete icon">
                 </div>
             </div>
-            <div class="today-tab">
-                <h3 class="today-heading2">Lina's Graduation</h3>
-                <p><img src="Images/icons8-clock-50.png" alt="A reminder icon">Reminder</p>
-                <p><img src="Images/icons8-priority-50 (1).png" alt="A red danger icon">High</p>
-                <img src="Images/icons8-edit-50.png" alt="An edit icon">
-                <img src="Images/icons8-delete-24.png" alt="A delete icon">
-            </div>
-            </div>
-        </section>
 
-        <section class="progress-container">
-            <!-- Shows the progress of tasks -->
-            <h2 class="progress-heading">Task Progress</h2>
-            <div class="progress">
-                <div class="progress-tab">
-                    <h3>Security Compliance Policy</h3>
-                    <div>
-                        <img src="Images/icons8-clock-50.png" alt="A reminder icon">
-                        <p>Reminder</p>
-                    </div>
-                    <div>
-                        <img src="Images/icons8-priority-50 (1).png" alt="A red danger icon">
-                        <p>High</p>
-                    </div>
+            <div class="task-tab">
+                <h3 class="task-heading">Lina's Graduation</h3>
+                <p>Due: Fri 10/11/20223</p>
+                <div class="reminder">
+                    <img src="Images/icons8-clock-50.png" alt="A reminder icon">
+                    <p>Reminder</p>
+                </div>
+                <div class="priority">
+                    <img src="Images/icons8-priority-50 (1).png" alt="A red danger icon">
+                    <p>High</p>
+                </div>
+                <div class="edit-delete">
                     <img src="Images/icons8-edit-50.png" alt="An edit icon">
                     <img src="Images/icons8-delete-24.png" alt="A delete icon">
                 </div>
-                <div>
-                    <h3 class="progress-tab">Timiza Accounting App</h3>
-                    <div>
-                        <img src="Images/icons8-clock-50.png" alt="A reminder icon">
-                        <p>Reminder</p>
-                    </div>
-                    <div>
-                        <img src="Images/icons8-priority-50.png" alt="A black danger icon">
-                        <p>Low</p>
-                    </div>
+            </div>
+
+            <div class="task-tab">
+                <h3 class="task-heading">Security Compliance Policy</h3>
+                <p>Due: Tue 28/11/20223</p>
+                <div class="reminder">
+                    <img src="Images/icons8-clock-50.png" alt="A reminder icon">
+                    <p>Reminder</p>
+                </div>
+                <div class="priority">
+                    <img src="Images/icons8-priority-50 (1).png" alt="A red danger icon">
+                    <p>High</p>
+                </div>
+                <div class="edit-delete">
+                    <img src="Images/icons8-edit-50.png" alt="An edit icon">
+                    <img src="Images/icons8-delete-24.png" alt="A delete icon">
+                </div>
+            </div>
+
+            <div class="task-tab">
+                <h3 class="task-heading">Timiza Accounting App</h3>
+                <p>Due: Wed 20/12/20223</p>
+                <div class="reminder">
+                    <img src="Images/icons8-clock-50.png" alt="A reminder icon">
+                    <p>Reminder</p>
+                </div>
+                <div class="priority">
+                    <img src="Images/icons8-priority-50.png" alt="A black danger icon">
+                    <p>Low</p>
+                </div>
+                <div class="edit-delete">
                     <img src="Images/icons8-edit-50.png" alt="An edit icon">
                     <img src="Images/icons8-delete-24.png" alt="A delete icon">
                 </div>
