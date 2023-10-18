@@ -54,7 +54,7 @@ The following are the apps’ features;
 
     1. Task creation
 
-    2. Due dates
+    2. Due date
 
     3. Editing (e.g. renaming, deleting)
 
