@@ -84,9 +84,11 @@ HTML, CSS, Python, Flask, MySQL, JavaScript, API, Git, Visual Studio, Figma
 
     A flowchart of the project
 
+![Alt text](<ChapaKazi Main UI.png>)
+
 ![Alt text](<ChapaKazi UI.png>)
 
-    A UI of the project
+    The Main UI of the Task Manager
 
 ## Roadmap and Future Enhancements
 
