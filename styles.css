@@ -5,9 +5,6 @@
     4. FOOTER
 */
 
-
-/* Setting styles for the whole body*/
-
 body {
     width: 1440px;
     height: 1024px;
@@ -32,12 +29,11 @@ body {
 /** Header **/
 
 .header {
-    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1103.4078369140625px;
-    height: 29.46099090576172px;
+    width: 1208px;
+    height: 45px;
     top: 35.02320098876976px;
     left: 171.5922088623048px;
     padding: 0px 0.00006103515625px 0px 0px;
