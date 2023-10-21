@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- The main page for the ChapaKazi Task Manager App -->
+    <title>ChapaKazi Capstone Project</title>
+    <script src="new-task.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <!-- The logo also includes a text-->
+            <a href="#"><img class="logo-icon" src="images/icons8-gears-50.png" alt="logo"></a>
+            <span class="logo-text">ChapaKazi</span>
+        </div>
+
+        <div class="searchbar">
+            <div class="search-container">
+                <img src="images/icons8-search-24.png" alt="Search Icon">
+                <input type="text" placeholder="Search tasks">
+            </div>
+        </div>
+
+        <div class="menu">
+            <!-- The menu-->
+            <nav class="navbar-menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#home"><img class="home-icon" src="images/icons8-home-50.png" alt="home icon"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#notification"><img class="notification-icon" src="images/icons8-notifications-78.png" alt="notification bell"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#settings"><img class="settings-icon" src="images/icons8-settings-50.png" alt="settings icon"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <article>
+            <!-- Welcome section-->
+            <div class="welcome">
+                <h4><strong>Hi Hayden!</strong></h4>
+                <p>Have a nice day</p>
+            </div>
+        </article>
+        <div class="minor">
+            <button type="button" onclick="window.location.href='/all-tasks'" class="task-button">All tasks</button>
+
+            <article class="create">
+                <!-- Allows the user to create a new task-->
+                <img onclick="createNew(event)" id="createTaskIcon" class="plus-icon" src="images/icons8-plus-50.png" alt="plus sign icon">
+                <p>Create new task</p>
+            </article>
+
+            <section class="profile">
+                <div class="avatar">
+                    <!-- This is the user account-->
+                    <img class="avatar-icon" src="images/henry hughes avatar.png" alt="User avatar">
+                    <div class="user">
+                        <p><strong>Hayden Okoth</strong></p>
+                        <p>hokoth@yahoo.com</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="task-container">
+            <!-- Shows the a few tasks on the dashboard-->
+            <h2 class="h2-task">Tasks</h2>
+
+            <!-- Each task tab contains a title of the task, a priority level, a due date,
+                a reminder, a checkbox for the user to mark as complete.
+                There's also an edit an delete icon. -->
+            <div class="task-tab">
+                <div class="class-details">
+                    <h3 class="task-heading">Water the plants</h3>
+
+                    <div class="priority">
+                        <img class="medium-icon" src="images/icons8-priority-50 (2).png" alt="An orange danger icon">
+                        <p>Medium</p>
+                    </div>
+                </div>
+
+                <p class="due-date">Due: Fri 20/10/20223</p>
+
+                <div class="reminder-checkbox">
+                    <div class="reminder">
+                        <img class="reminder-icon" src="images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+                    <input type="checkbox" id="taskCheck1" class="checkbox">
+                    <label for="taskCheck1" class="visually-hidden">Mark as complete</label>
+                </div>
+
+                <div class="edit-delete">
+                    <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
+                    <img class="delete-icon" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                </div>
+            </div>
+
+            <div class="task-tab">
+                <div class="class-details">
+                    <h3 class="task-heading">Lina's Graduation</h3>
+
+                    <div class="priority">
+                        <img class="high-icon" src="images/icons8-priority-50 (1).png" alt="A red danger icon">
+                        <p>High</p>
+                    </div>
+                </div>
+
+                <p class="due-date">Due: Fri 10/11/20223</p>
+
+                <div class="reminder-checkbox">
+                    <div class="reminder">
+                        <img class="reminder-icon" src="images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+                    <input type="checkbox" id="taskCheck2" class="checkbox">
+                    <label for="taskCheck2" class="visually-hidden">Mark as complete</label>
+                </div>
+
+                <div class="edit-delete">
+                    <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
+                    <img class="delete-icon" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                </div>
+            </div>
+
+            <div class="task-tab">
+                <div class="class-details">
+                    <h3 class="task-heading">Security Compliance Policy</h3>
+
+                    <div class="priority">
+                        <img class="high-icon" src="images/icons8-priority-50 (1).png" alt="A red danger icon">
+                        <p>High</p>
+                    </div>
+                </div>
+
+                <p class="due-date">Due: Tue 28/11/20223</p>
+
+                <div class="reminder-checkbox">
+                    <div class="reminder">
+                        <img class="reminder-icon" src="images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+
+                    <input type="checkbox" id="taskCheck3" class="checkbox">
+                    <label for="taskCheck3" class="visually-hidden">Mark as complete</label>
+
+                </div>
+
+                <div class="edit-delete">
+                    <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
+                    <img class="delete-icon" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                </div>
+            </div>
+
+            <div class="task-tab">
+                <div class="class-details">
+                    <h3 class="task-heading">Timiza Accounting App</h3>
+
+                    <div class="priority">
+                        <img class="low-icon" src="images/icons8-priority-50.png" alt="A black danger icon">
+                        <p>Low</p>
+                    </div>
+                </div>
+
+                <p class="due-date">Due: Wed 20/12/20223</p>
+
+                <div class="reminder-checkbox">
+                    <div class="reminder">
+                        <img class="reminder-icon" src="images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+                    <input type="checkbox" id="taskCheck4" class="checkbox">
+                    <label for="taskCheck4" class="visually-hidden">Mark as complete</label>
+                </div>
+
+                <div class="edit-delete">
+                    <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
+                    <img class="delete-icon" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                </div>
+            </div>
+        </section>
+
+        <section class="category-container">
+            <h2 class="category-heading">Categories</h2>
+            <!-- This section displays the categories of tasks in terms of its priority level
+                It also includes the count of tasks in each-->
+            <div class="category">
+                <div class="category-1">
+                    <div class="priority-icon">
+                        <img class="category-icon" src="images/icons8-priority-50 (1).png" alt="A red danger icon">
+                    </div>
+                    <div>
+                        <div class="content-container1">
+                            <p class="priority-1">High</p>
+                            <p>4 tasks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-2">
+                    <div class="priority-icon">
+                        <img class="category-icon" src="images/icons8-priority-50 (2).png" alt="An orange danger icon">
+                    </div>
+                    <div>
+                        <div class="content-container2">
+                            <p class="priority-2">Medium</p>
+                            <p>1 task</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-3">
+                    <div class="priority-icon">
+                        <img class="category-icon" src="images/icons8-priority-50.png" alt="A black danger icon">
+                    </div>
+                    <div>
+                        <div class="content-container3">
+                            <p class="priority-3">Low</p>
+                            <p>7 tasks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
