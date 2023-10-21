@@ -88,6 +88,8 @@ HTML, CSS, Python, Flask, MySQL, JavaScript, API, Git, Visual Studio, Figma
 
 ![Alt text](<ChapaKazi UI.png>)
 
+![Alt text](<Improved User Interface.png>)
+
     The Main UI of the Task Manager
 
 ## Roadmap and Future Enhancements
