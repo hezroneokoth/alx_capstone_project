@@ -8,6 +8,12 @@
     <!-- The main page for the ChapaKazi Task Manager App -->
     <title>ChapaKazi Capstone Project</title>
     <script src="new-task.js"></script>
+    <script src="delete-task.js"></script>
+    <script src="edit-task.js"></script>
+    <script src="search-tasks.js"></script>
+    <script src="signup.js"></script>
+    <script src="welcome.js"></script>
+
 </head>
 
 <body>
@@ -22,7 +28,7 @@
         <div class="searchbar">
             <div class="search-container">
                 <img src="images/icons8-search-24.png" alt="Search Icon">
-                <input type="text" placeholder="Search tasks">
+                <input type="text" placeholder="Search tasks" id="searchQuery">
             </div>
         </div>
 
@@ -54,9 +60,9 @@
             </div>
         </article>
         <div class="minor">
-            <button type="button" onclick="window.location.href='/all-tasks'" class="task-button">All tasks</button>
+            <button type="button" onclick="window.location.href='/all-tasks'" class="task-button" id="allTasksButton">All tasks</button>
 
-            <article class="create">
+            <article class="create-new">
                 <!-- Allows the user to create a new task-->
                 <img onclick="createNew(event)" id="createTaskIcon" class="plus-icon" src="images/icons8-plus-50.png" alt="plus sign icon">
                 <p>Create new task</p>
@@ -81,7 +87,7 @@
             <!-- Each task tab contains a title of the task, a priority level, a due date,
                 a reminder, a checkbox for the user to mark as complete.
                 There's also an edit an delete icon. -->
-            <div class="task-tab">
+            <div class="task-tab" data-task-id="1">
                 <div class="class-details">
                     <h3 class="task-heading">Water the plants</h3>
 
@@ -104,11 +110,11 @@
 
                 <div class="edit-delete">
                     <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
-                    <img class="delete-icon" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                    <img class="delete-icon" id="deleteButton" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
                 </div>
             </div>
 
-            <div class="task-tab">
+            <div class="task-tab" data-task-id="2">
                 <div class="class-details">
                     <h3 class="task-heading">Lina's Graduation</h3>
 
@@ -131,11 +137,11 @@
 
                 <div class="edit-delete">
                     <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
-                    <img class="delete-icon" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                    <img class="delete-icon" id="deleteButton" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
                 </div>
             </div>
 
-            <div class="task-tab">
+            <div class="task-tab" data-task-id="3">
                 <div class="class-details">
                     <h3 class="task-heading">Security Compliance Policy</h3>
 
@@ -160,11 +166,11 @@
 
                 <div class="edit-delete">
                     <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
-                    <img class="delete-icon" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                    <img class="delete-icon" id="deleteButton" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
                 </div>
             </div>
 
-            <div class="task-tab">
+            <div class="task-tab" data-task-id="4">
                 <div class="class-details">
                     <h3 class="task-heading">Timiza Accounting App</h3>
 
@@ -187,7 +193,7 @@
 
                 <div class="edit-delete">
                     <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
-                    <img class="delete-icon" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                    <img class="delete-icon" id="deleteButton" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
                 </div>
             </div>
         </section>
@@ -233,6 +239,12 @@
             </div>
         </section>
 
+        <!-- Confirmation dialogue for the deletion process-->
+        <div id="confirmationDialogue" class="confirmation-dialogue">
+            <p>Your task will be permanently deleted. Are you sure?</p>
+            <button type="button" id="confirmYes">Yes</button>
+            <button type="button" id="confirmNo">No</button>
+        </div>
     </main>
 </body>
 
