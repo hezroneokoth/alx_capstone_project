@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- This page displays all the tasks created by the user -->
+    <title>All tasks</title>
+    <script src="menu.js"></script>
+    <script src="all-tasks.js"></script>
+    <script src="new-task.js"></script>
+    <script src="delete-task.js"></script>
+    <script src="edit-task.js"></script>
+    <script src="search-tasks.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <!-- The logo also includes a text-->
+            <a href="#"><img class="logo-icon" src="images/icons8-gears-50.png" alt="logo"></a>
+            <span class="logo-text">ChapaKazi</span>
+        </div>
+
+        <div class="searchbar">
+            <div class="search-container">
+                <img src="images/icons8-search-24.png" alt="Search Icon">
+                <input type="text" placeholder="Search tasks" id="searchQuery">
+            </div>
+        </div>
+
+        <div class="menu">
+            <!-- The menu-->
+            <nav class="navbar-menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#home"><img class="home-icon" src="images/icons8-home-50.png" alt="home icon"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#notification"><img class="notification-icon" src="images/icons8-notifications-78.png" alt="notification bell"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#settings" id="settingsIcon"><img class="settings-icon" src="images/icons8-settings-50.png" alt="settings icon"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="all-tasks">
+            <!-- Shows all the tasks created by the user-->
+            <h2 class="task-header">All Tasks</h2>
+
+            <!-- Each task tab contains a title of the task, a priority level, a due date,
+                a reminder, a checkbox for the user to mark as complete.
+                There's also an edit an delete icon. -->
+            <div class="task-tab" data-task-id="1">
+                <div class="class-details">
+                    <h3 class="task-heading">Water the plants</h3>
+
+                    <div class="priority">
+                        <img class="medium-icon" src="images/icons8-priority-50 (2).png" alt="An orange danger icon">
+                        <p>Medium</p>
+                    </div>
+                </div>
+
+                <p class="due-date">Due: Fri 20/10/20223</p>
+
+                <div class="reminder-checkbox">
+                    <div class="reminder">
+                        <img class="reminder-icon" src="images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+                    <input type="checkbox" id="taskCheck1" class="checkbox">
+                    <label for="taskCheck1" class="visually-hidden">Mark as complete</label>
+                </div>
+
+                <div class="edit-delete">
+                    <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
+                    <img class="delete-icon" id="deleteButton" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                </div>
+            </div>
+
+            <div class="task-tab" data-task-id="2">
+                <div class="class-details">
+                    <h3 class="task-heading">Lina's Graduation</h3>
+
+                    <div class="priority">
+                        <img class="high-icon" src="images/icons8-priority-50 (1).png" alt="A red danger icon">
+                        <p>High</p>
+                    </div>
+                </div>
+
+                <p class="due-date">Due: Fri 10/11/20223</p>
+
+                <div class="reminder-checkbox">
+                    <div class="reminder">
+                        <img class="reminder-icon" src="images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+                    <input type="checkbox" id="taskCheck2" class="checkbox">
+                    <label for="taskCheck2" class="visually-hidden">Mark as complete</label>
+                </div>
+
+                <div class="edit-delete">
+                    <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
+                    <img class="delete-icon" id="deleteButton" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                </div>
+            </div>
+
+            <div class="task-tab" data-task-id="3">
+                <div class="class-details">
+                    <h3 class="task-heading">Security Compliance Policy</h3>
+
+                    <div class="priority">
+                        <img class="high-icon" src="images/icons8-priority-50 (1).png" alt="A red danger icon">
+                        <p>High</p>
+                    </div>
+                </div>
+
+                <p class="due-date">Due: Tue 28/11/20223</p>
+
+                <div class="reminder-checkbox">
+                    <div class="reminder">
+                        <img class="reminder-icon" src="images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+
+                    <input type="checkbox" id="taskCheck3" class="checkbox">
+                    <label for="taskCheck3" class="visually-hidden">Mark as complete</label>
+
+                </div>
+
+                <div class="edit-delete">
+                    <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
+                    <img class="delete-icon" id="deleteButton" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                </div>
+            </div>
+
+            <div class="task-tab" data-task-id="4">
+                <div class="class-details">
+                    <h3 class="task-heading">Timiza Accounting App</h3>
+
+                    <div class="priority">
+                        <img class="low-icon" src="images/icons8-priority-50.png" alt="A black danger icon">
+                        <p>Low</p>
+                    </div>
+                </div>
+
+                <p class="due-date">Due: Wed 20/12/20223</p>
+
+                <div class="reminder-checkbox">
+                    <div class="reminder">
+                        <img class="reminder-icon" src="images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+                    <input type="checkbox" id="taskCheck4" class="checkbox">
+                    <label for="taskCheck4" class="visually-hidden">Mark as complete</label>
+                </div>
+
+                <div class="edit-delete">
+                    <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
+                    <img class="delete-icon" id="deleteButton" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                </div>
+            </div>
+
+            <div class="task-tab" data-task-id="5">
+                <div class="class-details">
+                    <h3 class="task-heading">Submit the Annual Report</h3>
+
+                    <div class="priority">
+                        <img class="high-icon" src="images/icons8-priority-50 (1).png" alt="A red danger icon">
+                        <p>High</p>
+                    </div>
+                </div>
+
+                <p class="due-date">Due: Wed 22/12/20223</p>
+
+                <div class="reminder-checkbox">
+                    <div class="reminder">
+                        <img class="reminder-icon" src="images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+                    <input type="checkbox" id="taskCheck5" class="checkbox">
+                    <label for="taskCheck5" class="visually-hidden ">Mark as complete</label>
+                </div>
+
+                <div class="edit-delete">
+                    <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
+                    <img class="delete-icon" id="deleteButton" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                </div>
+            </div>
+
+            <div class="task-tab" data-task-id="6">
+                <div class="class-details">
+                    <h3 class="task-heading">Conduct a Risk Assesspent</h3>
+
+                    <div class="priority">
+                        <img class="medium-icon" src="images/icons8-priority-50 (2).png" alt="An orange danger icon">
+                        <p>Medium</p>
+                    </div>
+                </div>
+
+                <p class="due-date">Due: Fri 5/01/2024</p>
+
+                <div class="reminder-checkbox">
+                    <div class="reminder">
+                        <img class="reminder-icon" src="images/icons8-clock-50.png" alt="A reminder icon">
+                        <p>Reminder</p>
+                    </div>
+                    <input type="checkbox" id="taskCheck6" class="checkbox">
+                    <label for="taskCheck6" class="visually-hidden">Mark as complete</label>
+                </div>
+
+                <div class="edit-delete">
+                    <img class="edit-icon" src="images/icons8-edit-50.png" alt="An edit icon" onclick="editTask(event)">
+                    <img class="delete-icon" id="deleteButton" src="images/icons8-delete-24.png" alt="A delete icon" onclick="deleteTask(event)">
+                </div>
+            </div>
+        </section>
+
+        <!-- Confirmation dialogue for the deletion process-->
+        <div id="confirmationDialogue" class="confirmation-dialogue">
+            <p>Your task will be permanently deleted. Are you sure?</p>
+            <button type="button" id="confirmYes">Yes</button>
+            <button type="button" id="confirmNo">No</button>
+        </div>
+    </main>
+</body>
+
+</html>
