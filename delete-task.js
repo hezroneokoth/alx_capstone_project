@@ -33,11 +33,11 @@ function deleteTask(event) {
     });
 
 
-    // This block displays this confirmation dialogue
+    // this block displays this confirmation dialogue
     const confirmed = window.confirm('Your task will be permanently deleted. Are you sure?');
 
     if (confirmed) {
-        // User clicked 'OK' so proceed with deletion
+        // user clicked 'OK' so proceed with deletion
 
         // requests the server to delete the task
         fetch(`/delete-task/${taskId}`, {
@@ -57,7 +57,7 @@ function deleteTask(event) {
                 console.error('Error: Task not deleted:', error);
             });
     } else {
-        // User clicked 'NO', so do nothing
+        // user clicked 'NO', so do nothing
         console.log('Deletion cancelled');
     }
 }
