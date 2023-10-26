@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- The settings page for the ChapaKazi Task Manager App -->
+    <title>Settings</title>
+    <script src="menu.js"></script>
+    <script src="all-tasks.js"></script>
+    <script src="signup-form.js"></script>
+    <script src="login-form.js"></script>
+    <script src="search-tasks.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <!-- The logo also includes a text-->
+            <a href="#"><img class="logo-icon" src="images/icons8-gears-50.png" alt="logo"></a>
+            <span class="logo-text">ChapaKazi</span>
+        </div>
+
+        <div class="searchbar">
+            <div class="search-container">
+                <img src="images/icons8-search-24.png" alt="Search Icon">
+                <input type="text" placeholder="Search tasks" id="searchQuery">
+            </div>
+        </div>
+
+        <div class="menu">
+            <!-- The menu-->
+            <nav class="navbar-menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#home"><img class="home-icon" src="images/icons8-home-50.png" alt="home icon"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#notification"><img class="notification-icon" src="images/icons8-notifications-78.png" alt="notification bell"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#settings" id="settingsIcon"><img class="settings-icon" src="images/icons8-settings-50.png" alt="settings icon"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="settings">
+
+        <h1>Settings</h1>
+
+        <section class="profile-update">
+            <h2>Profile</h2>
+            <form action="/update-profile" method="post">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required><br>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required><br>
+
+                <label for="emailAddress">Email Address:</label>
+                <input type="email" id="emailAddress" name="emailAddress" required><br>
+
+                <input type="submit" value="Save Changes">
+            </form>
+        </section>
+
+        <section class="account">
+            <h2>Account</h2>
+            <form action="/change-password" method="post">
+                <label for="currentPassword">Current Password:</label>
+                <input type="password" id="currentPassword" name="currentPassword" required><br>
+
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required minlength="9"><br>
+
+                <label for="confirmPassword">Confirm New Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="9"><br>
+
+                <input type="submit" value="Change Password">
+            </form>
+        </section>
+
+
+        <section class="delete-account">
+            <form action="/delete-account" method="POST">
+                <h2>Delete Account</h2>
+                <p>Warning: Deleting your account will permanently remove all your data.</p>
+                <button type="submit" onclick="confirmDelete()">Delete Account</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function confirmDelete() {
+            var result = confirm("Are you sure you want to delete your account?");
+            if (result) {
+                window.location.href = "/delete-account";
+            }
+        }
+    </script>
+</body>
+
+</html>
