@@ -498,6 +498,22 @@ html {
     color: #FF0000;
 }
 
+.signup p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup p a {
+    color: #04198C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup p a:hover {
+    color: #A6ABC9;
+}
+
 
 /**** login.html file ****/
 
@@ -553,6 +569,74 @@ html {
 
 
 /****** settings.html *****/
+
+.settings {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.settings h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.settings section {
+    margin-bottom: 40px;
+}
+
+.settings label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.settings input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.settings button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #04198C;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.settings button[type="submit"]:hover {
+    background-color: #A6ABC9;
+}
+
+.settings p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.settings p a {
+    color: #04198C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.settings p a:hover {
+    color: #A6ABC9;
+}
 
 
 /**** new-task.html file ****/
